@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض الأخبار</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: right; }
+        th { background: #007bff; color: white; }
+        .btn { padding: 5px 10px; text-decoration: none; border-radius: 3px; font-size: 14px; display: inline-block; }
+        .btn-edit { background: #ffc107; color: black; }
+        .btn-delete { background: #dc3545; color: white; }
+    </style>
+</head>
+<body>
+    <h2>عرض جميع الأخبار في جدول</h2>
+    <a href="dashboard.html">العودة للوحة التحكم</a>
+    <div style="overflow-x:auto;">
+        <table>
+            <thead>
+                <tr><th>ID</th><th>عنوان الخبر</th><th>ID الفئة</th><th>تفاصيل الخبر</th><th>صورة الخبر</th><th>ID المستخدم</th><th>العمليات</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>انطلاق الدوري الممتاز</td>
+                    <td>1</td>
+                    <td>تفاصيل وفهرس مباراة اليوم الممتعة...</td>
+                    <td>sports.png</td>
+                    <td>5</td>
+                    <td>
+                        <a href="edit-news.html" class="btn btn-edit">✏️ تعديل الخبر</a>
+                        <a href="view-deleted-news.html" class="btn btn-delete" onclick="alert('تم حذف الخبر بنجاح عن طريق تغيير حالته في قاعدة البيانات إلى deleted')">🗑️ حذف الخبر</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

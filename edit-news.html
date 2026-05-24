@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعديل الخبر</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .box { max-width: 500px; margin: auto; background: white; padding: 20px; border: 1px solid #ddd; }
+        input, textarea, button { width: 100%; padding: 10px; margin: 8px 0; }
+        button { background: #ffc107; color: black; border: none; font-weight: bold; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>تعديل الخبر (يحتوي على البيانات القديمة)</h2>
+        <form action="view-news.html" method="GET">
+            <label>العنوان القديم لرفعه للتعديل:</label>
+            <input type="text" value="انطلاق الدوري الممتاز" required>
+            <label>تفاصيل الخبر القديمة:</label>
+            <textarea rows="4" required>تفاصيل وفهرس مباراة اليوم الممتعة الحاصلة على أرض الملعب الرياضي الدولي...</textarea>
+            <button type="submit">تعديل وحفظ التغييرات</button>
+        </form>
+        <a href="view-news.html">إلغاء والتراجع</a>
+    </div>
+</body>
+</html>

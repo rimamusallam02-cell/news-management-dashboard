@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; display: flex; flex-wrap: wrap; background: #f8f9fa; }
+        .sidebar { width: 250px; background: #343a40; color: white; min-height: 100vh; padding: 20px; box-sizing: border-box; }
+        .sidebar h3 { text-align: center; color: #fff; margin-bottom: 20px; }
+        .sidebar a { display: block; color: #fff; padding: 12px; text-decoration: none; margin-bottom: 5px; border-radius: 4px; }
+        .sidebar a:hover { background: #495057; }
+        .content { flex: 1; padding: 30px; min-width: 300px; }
+        @media(max-width: 768px) { body { flex-direction: column; } .sidebar { width: 100%; min-height: auto; } }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>نظام الأخبار</h3>
+        <hr>
+        <a href="add-category.html">إضافة فئة</a>
+        <a href="view-categories.html">عرض الفئات</a>
+        <a href="add-news.html">إضافة خبر</a>
+        <a href="view-news.html">عرض جميع الأخبار</a>
+        <a href="view-deleted-news.html">الأخبار المحذوفة</a>
+    </div>
+    <div class="content">
+        <h2>مرحباً بكِ في لوحة التحكم الرئيسية (Dashboard)</h2>
+        <p>استخدمي القائمة الجانبية لإدارة أقسام وفئات الأخبار كاملة بنظام متجاوب للأجهزة الذكية.</p>
+    </div>
+</body>
+</html>
